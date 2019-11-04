@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants.cs" />
+    <Compile Include="Create DataTable.cs" />
     <Compile Include="ffmpeg.cs" />
     <Compile Include="File Name Fix.cs" />
     <Compile Include="Get Files.cs" />
