@@ -97,6 +97,7 @@
             this.simpleButton2.Size = new System.Drawing.Size(131, 40);
             this.simpleButton2.TabIndex = 4;
             this.simpleButton2.Text = "Save";
+            this.simpleButton2.Click += new System.EventHandler(this.SimpleButton2_Click);
             // 
             // simpleButton3
             // 
