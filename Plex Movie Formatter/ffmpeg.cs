@@ -8,12 +8,12 @@ namespace Plex_Movie_Formatter
 {
     class ffmpeg
     {
-        public void ffmpegHandler(List<String> fileNames)
+        public DataTable ffmpegHandler(List<String> fileNames)
         {
-            ScanFiles(fileNames);
+            return ScanFiles(fileNames);
         }
 
-        private void ScanFiles(List<String> fileNames)
+        private DataTable ScanFiles(List<String> fileNames)
         {
             Dictionary<String, Dictionary<String, String>> metadataResults = new Dictionary<String, Dictionary<String, String>>();
 
@@ -25,6 +25,8 @@ namespace Plex_Movie_Formatter
 
             File_Name_Fix fixFileNames = new File_Name_Fix();
             fixFileNames.NameHandler(metadataResults);
+            Create_DataTable createDataTable = new Create_DataTable();
+            return createDataTable.DataHandler(metadataResults);
         }
 
         private String RetrieveDetails(string file)

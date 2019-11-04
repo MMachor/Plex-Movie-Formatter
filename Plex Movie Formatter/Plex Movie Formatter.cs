@@ -42,7 +42,9 @@ namespace Plex_Movie_Formatter
             Get_Files getFiles = new Get_Files();
             List<String> fileNames = getFiles.FileHandler(buttonEdit1.Text, checkEdit1.Checked);
             ffmpeg getMetadata = new ffmpeg();
-            getMetadata.ffmpegHandler(fileNames);
+            DataTable movieInformation = getMetadata.ffmpegHandler(fileNames);
+            gridControl1.DataSource = movieInformation;
+            gridView1.BestFitColumns();
         }
     }
 }

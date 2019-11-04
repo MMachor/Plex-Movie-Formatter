@@ -35,6 +35,14 @@ namespace Plex_Movie_Formatter
                             moviesInfo.Columns.Add(keyColumn).DataType = typeof(Boolean);
                     }
                 }
+
+                moviesInfo.Rows.Add();
+
+                foreach (String keyColumn in movieInformation.Keys)
+                    if (keyColumn == "Transcode")
+                        moviesInfo.Rows[moviesInfo.Rows.Count - 1][keyColumn] = Convert.ToBoolean(movieInformation[keyColumn]);
+                    else
+                        moviesInfo.Rows[moviesInfo.Rows.Count - 1][keyColumn] = movieInformation[keyColumn];
             }
 
             return moviesInfo;
