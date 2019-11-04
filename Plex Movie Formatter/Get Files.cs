@@ -1,7 +1,6 @@
 ﻿using System;
 using System.IO;
 using System.Collections.Generic;
-using System.Windows.Forms;
 
 namespace Plex_Movie_Formatter
 {
