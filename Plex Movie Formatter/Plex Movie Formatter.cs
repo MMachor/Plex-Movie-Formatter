@@ -59,5 +59,11 @@ namespace Plex_Movie_Formatter
                 ThreadPool.QueueUserWorkItem(new WaitCallback(handbrakeTranscode.TranscodeHandler), fileNames);
             }
         }
+
+        private void SimpleButton3_Click(object sender, EventArgs e)
+        {
+            Options plexOptions = new Options();
+            plexOptions.Show();
+        }
     }
 }

@@ -48,6 +48,7 @@
             this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.buttonEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -83,7 +84,7 @@
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(741, 38);
+            this.simpleButton1.Location = new System.Drawing.Point(741, 12);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(131, 40);
             this.simpleButton1.TabIndex = 3;
@@ -92,7 +93,7 @@
             // 
             // simpleButton2
             // 
-            this.simpleButton2.Location = new System.Drawing.Point(878, 38);
+            this.simpleButton2.Location = new System.Drawing.Point(741, 58);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(131, 40);
             this.simpleButton2.TabIndex = 4;
@@ -101,11 +102,12 @@
             // 
             // simpleButton3
             // 
-            this.simpleButton3.Location = new System.Drawing.Point(1015, 38);
+            this.simpleButton3.Location = new System.Drawing.Point(892, 12);
             this.simpleButton3.Name = "simpleButton3";
             this.simpleButton3.Size = new System.Drawing.Size(131, 40);
             this.simpleButton3.TabIndex = 5;
             this.simpleButton3.Text = "Options";
+            this.simpleButton3.Click += new System.EventHandler(this.SimpleButton3_Click);
             // 
             // gridControl1
             // 
@@ -255,11 +257,20 @@
             this.gridColumn11.VisibleIndex = 10;
             this.gridColumn11.Width = 131;
             // 
+            // simpleButton4
+            // 
+            this.simpleButton4.Location = new System.Drawing.Point(892, 58);
+            this.simpleButton4.Name = "simpleButton4";
+            this.simpleButton4.Size = new System.Drawing.Size(131, 40);
+            this.simpleButton4.TabIndex = 7;
+            this.simpleButton4.Text = "Select All";
+            // 
             // Plex_Movie_Formatter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2181, 938);
+            this.Controls.Add(this.simpleButton4);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.simpleButton3);
             this.Controls.Add(this.simpleButton2);
@@ -302,5 +313,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
+        private DevExpress.XtraEditors.SimpleButton simpleButton4;
     }
 }
